@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>QuickChat Tools – WhatsApp Direct Message, QR Generator & 20+ Tools</title>
+
+<meta name="description" content="QuickChat is a free WhatsApp toolkit with Direct Message, QR Generator, Emoji tools, Text Repeater, Bio Generator and many more tools.">
+
+<meta name="keywords" content="whatsapp direct message, qr code generator, text repeater, emoji generator, whatsapp tools, chat tools">
+
+<meta name="robots" content="index, follow">
+
+<meta name="google-site-verification" content="7_qmK4pWhnlSSN9uMI2aTvbmMSzCbm2QzNgAwtJ0RT4">
+
+<link rel="canonical" href="https://quickchattool.netlify.app">
+
+<meta name="theme-color" content="#25D366">
+
+<link rel="manifest" href="/manifest.json">
+
+<link rel="icon" href="/icon-192.png">
+<link rel="apple-touch-icon" href="/icon-512.png">
+
+<!-- Open Graph -->
+<meta property="og:title" content="QuickChat Tools">
+<meta property="og:description" content="Free WhatsApp tools including Direct Message, QR Generator, Emoji tools and more.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://quickchattool.netlify.app/icon-512.png">
+<meta property="og:url" content="https://quickchattool.netlify.app">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+ {
+ "@type": "Question",
+ "name": "What is QuickChat Tools?",
+ "acceptedAnswer": {
+ "@type": "Answer",
+ "text": "QuickChat Tools is a free WhatsApp toolkit that helps you generate direct message links, QR codes, emojis, and text tools."
+ }
+ },
+ {
+ "@type": "Question",
+ "name": "Is QuickChat Tools free?",
+ "acceptedAnswer": {
+ "@type": "Answer",
+ "text": "Yes, QuickChat Tools is completely free to use."
+ }
+ }
+ ]
+}
+</script>
+
+<!-- WebApplication Schema -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "WebApplication",
+ "name": "QuickChat Tools",
+ "url": "https://quickchattool.netlify.app",
+ "applicationCategory": "UtilityApplication",
+ "operatingSystem": "Android",
+ "offers": {
+   "@type": "Offer",
+   "price": "0"
+ }
+}
+</script>
+
+<!-- Website Schema -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "WebSite",
+ "name": "QuickChat Tools",
+ "url": "https://quickchattool.netlify.app"
+}
+</script>
+
+<style>
+#banner-ad{
+position:fixed;
+bottom:0;
+width:100%;
+text-align:center;
+z-index:1000;
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="root"></div>
+
+<!-- Banner Ad -->
+<div id="banner-ad">
+  <div class="ad-container" id="bannerAdView"></div>
+</div>
+
+<script type="module" src="/src/main.tsx"></script>
+
+<!-- Google AdMob Integration -->
+<script defer>
+let actionCounter = 0;
+let mInterstitialAdReady = false;
+
+// Simulated Interstitial Logic
+function handleUserAction() {
+  actionCounter++;
+  if(actionCounter >= 3) {
+    showInterstitial();
+    actionCounter = 0;
+  }
+}
+
+function showInterstitial() {
+  // In real Android app, this shows the Interstitial Ad
+  console.log("Interstitial ad would show now: ca-app-pub-2486732565949048/8217852312");
+}
+
+window.addEventListener('load', () => {
+  // Banner Ad
+  const bannerAdView = document.getElementById('bannerAdView');
+  if (bannerAdView) {
+    bannerAdView.innerHTML = '<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2486732565949048" data-ad-slot="8980269645" data-ad-format="auto"></ins>';
+    (window.adsbygoogle = window.adsbygoogle || []).push({});
+  }
+
+  // Simulated App Open
+  console.log("App Open Ad would show now: ca-app-pub-2486732565949048/7339884916");
+});
+
+// Make functions globally available for React components to call
+window.handleUserAction = handleUserAction;
+window.showInterstitial = showInterstitial;
+
+// ==== Keep all your existing QuickChat JS tool functions ====
+window.generateEmoji = function(){ console.log("Emoji generated"); }
+window.copyText = function(){ console.log("Text copied"); }
+window.fancyText = function(){ console.log("Fancy text applied"); }
+window.repeatText = function(){ console.log("Text repeated"); }
+window.generateQR = function(){ console.log("QR generated"); }
+window.createLink = function(){ console.log("Link created"); }
+</script>
+
+</body>
+</html>

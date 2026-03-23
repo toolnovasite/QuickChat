@@ -1,0 +1,7 @@
+{
+  "name": "QuickChat",
+  "description": "Send WhatsApp messages without saving contacts. Includes text repeater, QR chat scanner, fancy text, and more.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
